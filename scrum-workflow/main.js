@@ -13,20 +13,42 @@ function ZwalidujOsobe(osoba) // definicja funckji
 
 function PowolajDewelopera(osoba)
 {
-    ZwalidujOsobe(osoba); // wywołanie funkcji
+    ZwalidujOsobe(osoba); // wywołanie funkcja
 }
+
+// const pi = 3.14;
+
+// let inflation = 0.24;
+// inflation = 0.26;
+
+function SprawdzCertyfikatScrum(osoba)
+{
+    const pi = 5.14;
+    console.log(pi);
+}
+
+// x = 4 // przypisanie
+// if (x == y) // porównanie
+
+// String "Gerard Jaryczewski"
+// String 'Gerard Jaryczewski'
+// Number 1 2 3 2.4 4.3 4n
+// Boolean true false
+// Object 
+// Symbol
 
 function PowolajScrumMastera(osoba)
 {
-    // x = 4 // przypisanie
-    // if (x == y) // porównanie
+    WalidujScrumMastera(osoba);
+}
 
-    // String "Gerard Jaryczewski"
-    // String 'Gerard Jaryczewski'
-    // Number 1 2 3 2.4 4.3 4n
-    // Boolean true false
-    // Object 
-    // Symbol 
+function WalidujScrumMastera(osoba)
+{
+    if (osoba == undefined)
+    {
+        console.log("WTF?");
+        return;
+    }
 
     if (osoba == "Gerard Jaryczewski")
         ZgodzSie();
@@ -44,10 +66,36 @@ function NieZgodzSie()
     console.log("You shall not pass!");
 }
 
-PowolajScrumMastera("Gerard Jaryczewski");
-PowolajScrumMastera("Gerard Krzysztof Jaryczewski");
-PowolajScrumMastera(7);
-PowolajScrumMastera(true);
+const pi = 3.14;
+
+let kandydat = "Gerard Jaryczewski";
+PowolajScrumMastera(kandydat);
+
+kandydat = "Gerard Krzysztof Jaryczewski"
+PowolajScrumMastera(kandydat);
+
+kandydat = 7;
+PowolajScrumMastera(kandydat);
+
+kandydat = true;
+PowolajScrumMastera(kandydat);
+
+let kandydaci =
+[
+    "Jakub Drzazga",
+    "Grzegorz Iwanek",
+    "Jerzy Cieśliński"
+];
+
+// PowolajScrumMastera(kandydaci[0]);
+// PowolajScrumMastera(kandydaci[1]);
+// PowolajScrumMastera(kandydaci[2]);
+// PowolajScrumMastera(kandydaci[3]);
+
+for (let i = 0; i < kandydaci.length; i++)
+{
+    PowolajScrumMastera(kandydaci[i]);
+}
 
 // Właścicielem Produktu jest Urszula Wał-Złocista.
 
