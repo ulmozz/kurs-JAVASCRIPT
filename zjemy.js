@@ -6,7 +6,7 @@ let zamowione = ['chleb', 'maslo', 'wedlina', 'cebula'];
 let sniadanie = ['jajka', 'bekon', 'cebula'];
 
 function czyZjemy(skladniki, produkty) {
-  // Przyjmujemy pesymistycznie, ze NIE zjemy
+  // Przyjmujemy pesymistycznie, ze NIE zjemy...
   for (let s = 0; s < skladniki.length; s++) {
     let zjemy = false; // ...i dla kazdego skladnika sprawdzamy to zalozenie osobno
     for (let p = 0; p < produkty.length; p++) {
