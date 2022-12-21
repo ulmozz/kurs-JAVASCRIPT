@@ -10,7 +10,7 @@ function czyZjemy(skladniki, produkty) {
   for (let s = 0; s < skladniki.length; s++) {
     let zjemy = false; // ...i dla kazdego skladnika sprawdzamy to zalozenie osobno
     for (let p = 0; p < produkty.length; p++) {
-      if (produkty[p] == skladniki[s]) {
+      if (produkty[p] == skladniki[s]) { // Sprawdzamy, czy skladnik jest wsrod produktow
         zjemy = true;
       }
     }
