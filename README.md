@@ -11,3 +11,4 @@
 * [About READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 * [GitHub README Templates](https://www.readme-templates.com/)
 * [Keep a Changelog](https://keepachangelog.com/pl/1.0.0/)
+* [regular expression 101](https://regex101.com/)
