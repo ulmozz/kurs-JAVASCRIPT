@@ -1,0 +1,25 @@
+{
+  "name": "onnet",
+  "version": "1.0.0",
+  "description": "The brand new shiny newsroom.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjaryczewski/szkolenie-javascript"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js -p 3000",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:run": "start-server-and-test start http://localhost:3000 cy:run",
+    "test:open": "start-server-and-test start http://localhost:3000 cy:open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "start-server-and-test": "^2.0.0"
+  },
+  "dependencies": {
+    "cypress": "^12.8.1"
+  }
+}
