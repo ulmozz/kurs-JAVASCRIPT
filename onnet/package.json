@@ -1,25 +1,25 @@
 {
   "name": "onnet",
   "version": "1.0.0",
-  "description": "The brand new shiny newsroom.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gjaryczewski/szkolenie-javascript"
-  },
+  "description": "The brand new shiny newsroom website.",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js -p 3000",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "test:run": "start-server-and-test start http://localhost:3000 cy:run",
-    "test:open": "start-server-and-test start http://localhost:3000 cy:open"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "cypress": "^12.8.1",
     "start-server-and-test": "^2.0.0"
   },
-  "dependencies": {
-    "cypress": "^12.8.1"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "cypress run",
+    "cypress": "cypress open",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjaryczewski/szkolenie-javascript/tree/main/onnet"
+  },
+  "keywords": [
+    "newsroom"
+  ],
+  "author": "Gerard Jaryczewski",
+  "license": "ISC"
 }
