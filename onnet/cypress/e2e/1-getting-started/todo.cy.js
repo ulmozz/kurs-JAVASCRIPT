@@ -11,6 +11,24 @@
 // please read our getting started guide:
 // https://on.cypress.io/introduction-to-cypress
 
+describe('our example', () => describe('our example', () => {
+  beforeEach(() => {
+    cy.visit('https://example.cypress.io/cypress-api')
+  })
+
+  it('contains link to GitHub repository', () => {
+    //cy.pause();
+    cy.contains('GitHub');
+  })
+
+  it('contains clickable link to command Cypress.Commands.add()', () => {
+    const lintText = 'Cypress.Commands.add()';
+    cy.contains(lintText).click();
+    cy.url().should('include', 'api/cypress-api/custom-commands')
+    cy.url().should('include', lintText);
+  })
+}))
+
 describe('example to-do app', () => {
   beforeEach(() => {
     // Cypress starts out with a blank slate for each test
@@ -32,6 +50,7 @@ describe('example to-do app', () => {
     // and then perform an assertion with `should`.
     cy.get('.todo-list li').first().should('have.text', 'Pay electric bill')
     cy.get('.todo-list li').last().should('have.text', 'Walk the dog')
+    cy.get('').should('to.match', /\w+ \d{1,2}, \d{4}/)
   })
 
   it('can add new todo items', () => {
