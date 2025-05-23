@@ -1,45 +1,77 @@
-Pwoołujemy następujący Zespół Deweloperski:
+// Pwoołujemy następujący Zespół Deweloperski:
 
- - Scrum Masterem jest Agaton Biały
- - Programiści: Cezary Drążek, Ewelina Faworek, Gerwazy Harcerz
- - Testerzy: Izydor Jabłkowski, Karolina Ludmiła Młynarz
- - DevOps: Natalia Oreo-Przegródka
- - Analityk: Roch Studzienny
+//  - Scrum Masterem jest Agaton Biały
+//  - Programiści: Cezary Drążek, Ewelina Faworek, Gerwazy Harcerz
+//  - Testerzy: Izydor Jabłkowski, Karolina Ludmiła Młynarz
+//  - DevOps: Natalia Oreo-Przegródka
+//  - Analityk: Roch Studzienny
 
-Właścicielem Produktu jest Urszula Wał-Złocista.
+function ZwalidujOsobe(osoba) // definicja funkcji
+{
 
-Celem projektu jest zbudowanie nowej webowej aplikacji onboardingowej dla organizacji.
+}
 
-Termin wdrożenia projektu: 2023-01-31
+function PowolajDewelopera(osoba)
+{
+    ZwalidujOsobe(osoba); // wywołanie funkcji
+}
 
-Budżet projektu: 100 000 PLN
+function PowolajScrumMastera(osoba)
+{
+    if (osoba == "Gerard Jaryczewski")
+        ZgodzSie();
+    else 
+        NieZgodzSie(); 
+}
 
-Do główych zadań zatwierdzonych w Backlogu Produktu należą:
+function ZgodzSie()
+{
+    console.log("Zgadzam sie");
+}
 
-1. Definiowanie kompetencji
-2. Rejestrowanie artykułów wiedzy
-3. Rejestrowanie trenerów
-4. Przypisywanie kompetencji do trenerów
-5. Rejestrowanie użytkowników
-6. Wybór treningów kompetencji przez użytkowników
-7. Listy kontrolne realizacji zadań onboardingu
+function NieZgodzSie()
+{
+    console.log("You shall not pass!");
+}
 
-Główe zadania będą dekomponowane na zadania szczegółowe zgodnie z decyzjami Zespołu.
+PowolajScrumMastera("Gerard K Jaryczewski");
+PowolajScrumMastera(7);
+PowolajScrumMastera(true);
 
-Reguły pracy wytwórczej definiuje framework Scrum.
+// Właścicielem Produktu jest Urszula Wał-Złocista.
 
-Ustalamy 2-tygodniowy sprint.
+// Celem projektu jest zbudowanie nowej webowej aplikacji onboardingowej dla organizacji.
 
-Zgodnie z frameworkiem Scrum, schemat cyklu pracy w sprincie jest następujący:
+// Termin wdrożenia projektu: 2023-01-31
 
-- W dniu 1 Sprintu odbywa się spotkanie Planning.
-- W dniach od 2 do 9 Sprintu odbywa się spotkanie Daily.
-- W dniu 10 odbywa się spotkanie Review oraz Retrospctive.
+// Budżet projektu: 100 000 PLN
 
-Kolejne sprinty rozpoczynają się automatycznie po sobie.
+// Do główych zadań zatwierdzonych w Backlogu Produktu należą:
 
-Jeżeli w toku dowolnego spotkania Właściciel Produktu stwierdza, że dalsza praca nie ma uzasadnienia biznesowego, przerywamy projekt.
+// 1. Definiowanie kompetencji
+// 2. Rejestrowanie artykułów wiedzy
+// 3. Rejestrowanie trenerów
+// 4. Przypisywanie kompetencji do trenerów
+// 5. Rejestrowanie użytkowników
+// 6. Wybór treningów kompetencji przez użytkowników
+// 7. Listy kontrolne realizacji zadań onboardingu
 
-Projekt może zostać przerwany w przypadku przekroczenia terminu danego przez zarząd lub przekroczenia budżetu.
+// Główe zadania będą dekomponowane na zadania szczegółowe zgodnie z decyzjami Zespołu.
 
-Jeśli projekt nie zostanie przerwany, zakończy się po realizacji wszystkich głównych zadań.
+// Reguły pracy wytwórczej definiuje framework Scrum.
+
+// Ustalamy 2-tygodniowy sprint.
+
+// Zgodnie z frameworkiem Scrum, schemat cyklu pracy w sprincie jest następujący:
+
+// - W dniu 1 Sprintu odbywa się spotkanie Planning.
+// - W dniach od 2 do 9 Sprintu odbywa się spotkanie Daily.
+// - W dniu 10 odbywa się spotkanie Review oraz Retrospctive.
+
+// Kolejne sprinty rozpoczynają się automatycznie po sobie.
+
+// Jeżeli w toku dowolnego spotkania Właściciel Produktu stwierdza, że dalsza praca nie ma uzasadnienia biznesowego, przerywamy projekt.
+
+// Projekt może zostać przerwany w przypadku przekroczenia terminu danego przez zarząd lub przekroczenia budżetu.
+
+// Jeśli projekt nie zostanie przerwany, zakończy się po realizacji wszystkich głównych zadań.
