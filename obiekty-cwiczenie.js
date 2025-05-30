@@ -9,6 +9,17 @@ let user = {
     }
 }
 
+//Mozna tez metode (czyli funkcję obiektu) zdefiniowac w szybszy sposób
+let user = {
+    name: "Dariusz",
+    age: 38,
+    email: "dariusz@example.com",
+    courses: ["JavaScript","SQL"],
+    sayHi() {
+        console.log(`Hello! Moje imie to ${this.name}`);
+    }
+}
+
 // Wypisuje pojedynczo wlasciwosci obiektu
 console.log(user.name);
 console.log(user.age);
