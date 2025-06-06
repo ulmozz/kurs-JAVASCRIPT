@@ -11,6 +11,30 @@
 // please read our getting started guide:
 // https://on.cypress.io/introduction-to-cypress
 
+describe('our example', () => describe('our example', () => {
+  beforeEach(() => {
+    cy.visit('https://example.cypress.io/cypress-api')
+  })
+
+  it('contains link to GitHub repository', () => {
+    //cy.pause();
+    cy.contains('GitHub');
+  })
+
+  it('contains clickable link to command Cypress.Commands.add()', () => {
+    const lintText = 'Cypress.Commands.add()';
+    cy.contains(lintText).click();
+
+    // Od wersji cypressa 12+ nie mozna wykonywac testow ktore
+    //  przechodza przez rozne domeny - tutaj klikniecie przekierowuje
+    //  nas nas docs.cypress.io dlatego konieczne bylo uzycie cy.origin
+    cy.origin('https://docs.cypress.io', () => {
+    cy.url().should('include', 'api/cypress-api/custom-commands');
+    cy.contains('Cypress.Commands.add');
+  });
+  })
+}))
+
 describe('example to-do app', () => {
   beforeEach(() => {
     // Cypress starts out with a blank slate for each test
