@@ -1,0 +1,9 @@
+#subscription-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blueviolet;
+    color:azure
+}
+
+#subscription-text a {
+    font-weight: bold;
+}
