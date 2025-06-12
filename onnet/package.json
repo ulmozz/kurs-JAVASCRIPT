@@ -1,14 +1,14 @@
 {
   "dependencies": {
-    "cypress": "^14.4.1"
+    "cypress": "^14.4.1",
+    "wait-on": "^8.0.3"
   },
   "name": "onnet",
   "version": "1.0.0",
   "description": "The brand new shiny newsroom website.",
   "main": "server.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "cypress run",
+    "test": "start \"onnet-server\" node server.js & wait-on http://localhost:3000 & start \"taxpayer-api\" json-server --watch db.json --port 3001 & wait-on http://localhost:3001 & cypress run",
     "cypress": "cypress open",
     "start": "node server.js"
   },
