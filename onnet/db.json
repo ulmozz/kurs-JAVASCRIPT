@@ -1,0 +1,40 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "title": "json-server",
+            "author": "typicode"
+        },
+        {
+            "id": "2",
+            "title": "json-server whaaaaasap",
+            "author": "Dariusz"
+        }
+    ],
+    "comments": [
+        {
+            "id": "1",
+            "text": "a comment about post 1",
+            "postId": "1"
+        },
+        {
+            "id": "2",
+            "text": "another comment about post 1",
+            "postId": "1"
+        }
+    ],
+    "taxpayers": [
+        {
+            "pesel": "12345678905",
+            "firstName": "Vendago",
+            "lastName": "Porrokulem",
+            "payments": [
+            {
+            "paymentId": 1,
+            "amount": 1000,
+            "date": "2023-01-01"
+            }
+        ]
+        }
+    ]   
+}
