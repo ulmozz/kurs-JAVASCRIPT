@@ -1,6 +1,9 @@
 describe('subscription features', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/')
+    cy.fixture("server").then((server) => {
+        cy.visit(server.baseURL)
+    })
+    // cy.visit('http://localhost:3000/')
   })
 
   it('contains subs text', () => {
